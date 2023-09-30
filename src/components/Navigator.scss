@@ -1,0 +1,35 @@
+
+.navi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    height: 100px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+
+}
+.user{
+    color: white;
+    font-size: 40px;
+    font-weight: semi-bold;
+    align-self: center;
+
+}
+.naviBTN{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    height: auto;
+}
