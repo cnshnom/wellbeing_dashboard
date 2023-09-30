@@ -1,5 +1,4 @@
 import './GlassBTN.scss';
-import '../components/Glass.scss'
 import { Button } from '@mui/material';
 
 interface GlassBTNProps{
