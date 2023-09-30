@@ -19,6 +19,7 @@
   .phoneBTN{
     display: flex;
     justify-content: space-around;
+    gap: 10px;
     width: 15%;
     p{
       color:white;
@@ -28,4 +29,7 @@
     .phone{
       width: 40px;
     }
+  }
+  .phoneBTN:hover {
+    transform: translateY(-20px);
   }

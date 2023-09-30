@@ -6,7 +6,11 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
+
 }
+.btn:hover {
+    transform: translateY(-20px);
+  }
 .text{
     width: 150px;
     font-size: 20px;
