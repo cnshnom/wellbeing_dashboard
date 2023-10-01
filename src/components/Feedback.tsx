@@ -8,7 +8,7 @@ function Feedback(){
         <div className="container glass">
             <p className='feedbackText'>Feedback</p>
         <div className="feedback glass">
-        <IconButton className='microphone'><img src={microphone}></img></IconButton>
+        <IconButton className='microphone'><img src={microphone} alt=''></img></IconButton>
        
         </div>
         <p className='ask'>Any problems at work?</p>
