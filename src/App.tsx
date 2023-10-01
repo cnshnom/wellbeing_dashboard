@@ -12,6 +12,7 @@ function App() {
     const [isFeedback, setFeedback] = useState(false);
     function clickDashboard(){
         setDashboard(true);
+        setFeedback(false);
     }
     function clickFeedback(){
         setFeedback(true);
