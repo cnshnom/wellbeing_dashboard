@@ -1,6 +1,9 @@
 .dashboard{
     width: 100%;
    height: 100%;
+   display: flex;
+flex-direction: column;
+   gap: 10px;
 }
 
 .glassBTN{
@@ -20,7 +23,7 @@
     display: flex;
     justify-content: space-around;
     gap: 10px;
-    width: 15%;
+    width: 200px;
     p{
       color:white;
       font-size: 20px;
@@ -32,4 +35,26 @@
   }
   .phoneBTN:hover {
     transform: translateY(-20px);
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .glassBTN{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .safetyBTN{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px
+      }
+      .phoneBTN:hover {
+        transform: translateY(-1px);
+      }
+    
   }

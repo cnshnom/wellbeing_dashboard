@@ -1,18 +1,43 @@
-body{
-  background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)), url("../src/assets/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;    
+@media only screen and (min-width: 600px) {
+  html, body {max-height: 100%;}
 
-
-}
-.glass{
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  height: 100vh;
+  body{
+    height: 100vh;
+    width: 100vw;
   }
+  div.img{
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)), url("../src/assets/background.jpg");
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height:100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .glass{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100vh;
+    margin: 0;
+  }
+}
  
- 
+  @media only screen and (max-width: 600px) {
+    body{
+      background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)), url("../src/assets/background.jpg");
+      background-position: center;
+      background-repeat: repeat;
+      background-size: cover;    
+    }
+    .glass{
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+  }

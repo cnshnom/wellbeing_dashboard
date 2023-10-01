@@ -6,9 +6,11 @@ import Dashboard from './components/Dashboard';
 
 function App() {
   return (
+    <div className='img'>
     <div className="glass">
      <Navigator></Navigator>
     <Dashboard/>
+    </div>
     </div>
   );
 }
