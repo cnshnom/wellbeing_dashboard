@@ -35,18 +35,18 @@ const [isCheck, setIsCheck] = useState(false);
 
     }
     function clickCheck(){
-      setIsDashboard(false);
+      setIsDashboard(true);
       setIsFeedback(false);
       setHealthData(false);
       setIsWork(false);
-      setIsCheck(true);
+      setIsCheck(false);
 
     }
     function clickWork(){
-      setIsDashboard(false);
+      setIsDashboard(true);
       setIsFeedback(false);
       setHealthData(false);
-      setIsWork(true);
+      setIsWork(false);
       setIsCheck(false);
 
     }
