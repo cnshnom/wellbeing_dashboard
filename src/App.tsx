@@ -6,43 +6,49 @@ import Feedback from './components/Feedback';
 import HealthData from './components/HealthData';
 
 
-
 function App() {
-  
-  const [isDashboard, setDashboard] = useState(true);
-    const [isFeedback, setFeedback] = useState(false);
-    const [isHealthData, setHealthData] = useState(false)
-    const [isCheck,setCheck]=useState(false);
-    const [isWork, setWork] = useState(false);
+const [isDashboard, setIsDashboard] = useState(true);
+const [isFeedback, setIsFeedback] = useState(false);
+const [isHealthData, setHealthData] = useState(false);
+const [isWork, setIsWork] = useState(false);
+const [isCheck, setIsCheck] = useState(false);
     function clickDashboard(){
-        setDashboard(true);
-        setFeedback(false);
+      setIsDashboard(true);
+      setIsFeedback(false);
+      setHealthData(false);
+      setIsWork(false);
+      setIsCheck(false);
     }
     function clickFeedback(){
-        setFeedback(true);
-        setDashboard(false);
+      setIsDashboard(false);
+      setIsFeedback(true);
+      setHealthData(false);
+      setIsWork(false);
+      setIsCheck(false);
     }
     function clickHealthData(){
+      setIsDashboard(false);
+      setIsFeedback(false);
       setHealthData(true);
-      setDashboard(false);
-      setFeedback(false);
-      setWork(false);
-      setCheck(false);
-      setHealthData(false);
+      setIsWork(false);
+      setIsCheck(false);
+
     }
     function clickCheck(){
-      setCheck(true);
-      setWork(false);
+      setIsDashboard(false);
+      setIsFeedback(false);
       setHealthData(false);
-      setDashboard(false);
-      setFeedback(false);
+      setIsWork(false);
+      setIsCheck(true);
+
     }
     function clickWork(){
-      setWork(true);
-      setCheck(false);
+      setIsDashboard(false);
+      setIsFeedback(false);
       setHealthData(false);
-      setDashboard(false);
-      setFeedback(false);
+      setIsWork(true);
+      setIsCheck(false);
+
     }
   return (
     <div className='img'>
