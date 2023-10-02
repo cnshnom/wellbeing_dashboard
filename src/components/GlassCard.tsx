@@ -1,5 +1,5 @@
 import './GlassCard.scss';
-import LineChart from './LineChart';
+import LineChart from './SleepChart';
 interface GlassCardProps{
     linechart?: React.ReactNode;
     img?:string;
@@ -14,7 +14,7 @@ function GlassCard(props:GlassCardProps){
         <p className='text'>{text}</p>
         {img&&<img src={img} width='200px' height='200px' className='img' alt=''/>}
         {number&&<div className="number">{number}</div>}
-        {linechart&&<LineChart/>}
+        {linechart&&linechart}
     </div>;
 }
 export default GlassCard;

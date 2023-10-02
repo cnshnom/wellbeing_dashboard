@@ -1,6 +1,6 @@
 import './HealthData.scss'
 import GlassCard from './GlassCard';
-import LineChart from './LineChart';
+import LineChart from './SleepChart';
 
 function HealthData(){
     const sleepHistory = <LineChart/>
