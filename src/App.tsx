@@ -5,6 +5,7 @@ import { MouseEvent, useState } from 'react';
 import Feedback from './components/Feedback';
 import HealthData from './components/HealthData';
 import Warning from './components/Warning';
+import Login from './components/Login';
 
 
 function App() {
@@ -14,11 +15,14 @@ const [isHealthData, setHealthData] = useState(false);
 const [isWork, setIsWork] = useState(false);
 const [isCheck, setIsCheck] = useState(false);
 const [isWarn, setIsWarn] = useState(false);
+const [isUser, setUser] = useState(false);
 
     function clickDashboard(){
       setIsDashboard(true);
       setIsFeedback(false);
       setIsWarn(false);
+      setUser(false);
+
       setHealthData(false);
       setIsWork(false);
       setIsCheck(false);
@@ -27,6 +31,8 @@ const [isWarn, setIsWarn] = useState(false);
       setIsDashboard(false);
       setIsFeedback(true);
       setIsWarn(false);
+      setUser(false);
+
 
       setHealthData(false);
       setIsWork(false);
@@ -38,6 +44,18 @@ const [isWarn, setIsWarn] = useState(false);
       setIsDashboard(false);
       setIsFeedback(false);
       setIsWarn(true);
+      setUser(false);
+
+      setHealthData(false);
+      setIsWork(false);
+      setIsCheck(false);
+    }
+
+    function clickUser(){
+      setIsDashboard(false);
+      setIsFeedback(false);
+      setIsWarn(false);
+      setUser(true);
 
       setHealthData(false);
       setIsWork(false);
@@ -48,6 +66,8 @@ const [isWarn, setIsWarn] = useState(false);
       setIsDashboard(false);
       setIsFeedback(false);
       setIsWarn(false);
+      setUser(false);
+
 
       setHealthData(true);
       setIsWork(false);
@@ -59,6 +79,8 @@ const [isWarn, setIsWarn] = useState(false);
       setIsDashboard(true);
       setIsFeedback(false);
       setIsWarn(false);
+      setUser(false);
+
 
       setHealthData(false);
       setIsWork(false);
@@ -69,6 +91,8 @@ const [isWarn, setIsWarn] = useState(false);
       setIsDashboard(true);
       setIsFeedback(false);
       setIsWarn(false);
+      setUser(false);
+
 
       setHealthData(false);
       setIsWork(false);
@@ -79,10 +103,11 @@ const [isWarn, setIsWarn] = useState(false);
   return (
     <div className='img'>
     <div className="glass">
-     <Navigator clickDashboard={clickDashboard} clickFeedback={clickFeedback} clickWarning={clickWarning}></Navigator>
+     <Navigator clickDashboard={clickDashboard} clickFeedback={clickFeedback} clickWarning={clickWarning} clickUser={clickUser}></Navigator>
     {isDashboard && <Dashboard clickHealthData={clickHealthData} clickCheck={clickCheck} clickWork={clickWork}/>}
     {isFeedback && <Feedback />}
     {isWarn && <Warning/>}
+    {isUser && <Login />}
     {isHealthData && <HealthData/>}
     </div>
     </div>

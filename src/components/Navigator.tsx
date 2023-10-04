@@ -9,11 +9,13 @@ interface NavigatorProps{
     clickDashboard: (event: React.MouseEvent<HTMLButtonElement>) => void;
     clickFeedback: (event: React.MouseEvent<HTMLButtonElement>) => void;
     clickWarning: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    clickUser: (event: React.MouseEvent<HTMLButtonElement>) => void;
+
 
 }
 function Navigator(props:NavigatorProps){
 
-    const {clickDashboard, clickFeedback, clickWarning} = props
+    const {clickDashboard, clickFeedback, clickWarning, clickUser} = props
     return<div className='navi'>
         <div className='head'>
         <img src={healthcare} className='logo' alt=''/>
@@ -24,7 +26,7 @@ function Navigator(props:NavigatorProps){
         <Button className='naviBTN'onClick={clickFeedback}sx={{color:'white'}}>Feedback</Button>
         <Button className='naviBTN'onClick={clickWarning}sx={{color:'white'}}>Warning</Button>
 
-        <IconButton> <img src={user} height='48px' alt=''/></IconButton>
+        <IconButton onClick={clickUser}> <img src={user} height='48px' alt=''/></IconButton>
         </div>
         </div>
 }
