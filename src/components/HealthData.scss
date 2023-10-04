@@ -17,3 +17,13 @@
     width: 1100px;
     height: 300px;
 }
+
+@media only screen and (max-width: 950px) {
+    .glassData{
+        width: 250px;
+        height: 250px;
+    }
+    .glassStatics{
+        width: 800px;
+    }
+}
