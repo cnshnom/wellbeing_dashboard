@@ -13,6 +13,6 @@ function Feedback(){
         </div>
         <p className='ask'>Any problems at work?</p>
         </div>
-    </div>;
+    </div>
 }
 export default Feedback;

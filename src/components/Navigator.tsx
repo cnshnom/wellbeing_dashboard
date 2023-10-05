@@ -30,6 +30,12 @@ function Navigator(props:NavigatorProps){
         <p className='user'>Hi, Doris</p>
         </div>
         <div className='menu'>
+        <div className='naviBTNDesktop'>
+        <Button className='naviBTN' onClick={clickDashboard} sx={{color:'white'} }>Dashboard</Button>
+        <Button className='naviBTN'onClick={clickFeedback}sx={{color:'white'}}>Feedback</Button>
+        <Button className='naviBTN'onClick={clickWarning}sx={{color:'white'}}>Warning</Button>
+        <IconButton onClick={clickUser}> <img src={user} height='48px' alt=''/></IconButton>
+        </div>
         <IconButton className='menuBTN' onClick={clickMenu}> {!menuOpen?<MenuOutlinedIcon sx={{color:'white'}} className='menuIcon'/>:<CloseOutlinedIcon sx={{color:'white'}} className='closeIcon'/>}</IconButton>
         {menuOpen&&<div className='naviBTNMenu'>
         <Button className='naviBTN' onClick={clickDashboard} sx={{color:'white'} }>Dashboard</Button>
@@ -37,12 +43,6 @@ function Navigator(props:NavigatorProps){
         <Button className='naviBTN'onClick={clickWarning}sx={{color:'white'}}>Warning</Button>
         <IconButton onClick={clickUser}> <img src={user} height='48px' alt=''/></IconButton>
         </div>}
-        <div className='naviBTNDesktop'>
-        <Button className='naviBTN' onClick={clickDashboard} sx={{color:'white'} }>Dashboard</Button>
-        <Button className='naviBTN'onClick={clickFeedback}sx={{color:'white'}}>Feedback</Button>
-        <Button className='naviBTN'onClick={clickWarning}sx={{color:'white'}}>Warning</Button>
-        <IconButton onClick={clickUser}> <img src={user} height='48px' alt=''/></IconButton>
-        </div>
         </div>
         </div>
 }

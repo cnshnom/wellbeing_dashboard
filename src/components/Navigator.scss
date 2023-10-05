@@ -34,7 +34,13 @@
 .menuBTN{
     visibility: hidden;
 }
-.naviBTN .naviBTNDesktop{
+.naviBTN {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+}
+.naviBTNDesktop{
     color: white;
     display: flex;
     justify-content: space-around;
@@ -64,8 +70,7 @@
         visibility: visible;
     }
     .naviBTNDesktop{
-        visibility: hidden;
-
+        display: none;
     }
     .naviBTNMenu{
         visibility: visible;
